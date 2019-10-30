@@ -1,0 +1,20 @@
+[package]
+name = "coreutils"
+version = "0.1.0"
+authors = ["Hrishikesh Sawant <hrishikesh.sawant1@tcs.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+structopt = "0.3.3"
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]] name = "which"
+path = "src/bin/which.rs"
+
+
+[[bin]] name = "sort"
+path = "src/bin/sort.rs"
